@@ -19,9 +19,9 @@ const start = function () {
             compareNumbers();
         }
 
-        if (answerToNumber > randomNumber) {
+        if (answerToNumber > randomNumber && answerToNumber > 1  && answerToNumber < 100) {
             handler('Загаданное число меньше');
-        } else if (answerToNumber < randomNumber && answerToNumber > 1  && answerToNumber < 100) {  // числа больше 100 почему-то все равно отрабатывают тут
+        } else if (answerToNumber < randomNumber && answerToNumber > 1  && answerToNumber < 100) { 
             handler('Загаданное число больше');
         } else if (!isNumber(answerToNumber) || answerToNumber < 1 || answerToNumber > 100) {
             handler('Введите число от 1 до 100!');
