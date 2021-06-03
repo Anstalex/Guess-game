@@ -6,7 +6,7 @@ let isNumber = function (n) {
 
 const start = function () {
     const randomNumber = Math.round(Math.random() * 100);
-    console.log(randomNumber)
+    console.log(randomNumber); //Чтоб было легче угадывать
     const compareNumbers = function () {
         let answer = prompt('Угадай число от 1 до 100');
 
@@ -40,5 +40,4 @@ const start = function () {
 
     compareNumbers();
 }
-
 start();
